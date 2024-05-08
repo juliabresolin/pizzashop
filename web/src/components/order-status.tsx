@@ -29,8 +29,11 @@ export function OrderStatus({ status }: OrderStatusProps) {
       {status === 'delivered' && (
         <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
       )}
-      {['processing', 'delivering'].includes(status) && (
-        <span className="h-2 w-2 rounded-full bg-amber-400"></span>
+      {status === 'delivering' && (
+        <span className="h-2 w-2 rounded-full bg-blue-500"></span>
+      )}
+      {status === 'processing' && (
+        <span className="h-2 w-2 rounded-full bg-amber-500"></span>
       )}
       <span className="font-medium text-muted-foreground">
         {orderStatusMap[status]}
