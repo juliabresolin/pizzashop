@@ -21,7 +21,7 @@ export function Header() {
 
           <NavLink to="/orders">
             <Utensils className="h-4 w-4" />
-            Utensílios
+            Pedidos
           </NavLink>
         </nav>
 
